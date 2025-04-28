@@ -30,6 +30,9 @@ def colorize_output(char):
     if "+" not in out:
         return char
 
+    # if out.count("+") == 1:
+    #     print("\033[H\033[J", end="")
+
     match char:
         case ".":
             return Fore.RED + char + Style.RESET_ALL  # Red
