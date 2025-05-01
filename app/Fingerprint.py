@@ -28,6 +28,8 @@ class Fingerprint:
                 for match in matches:
                     # return match.replace(":", ""), name
                     if name == "SHA256":
+                        print(match)
+                        match += "=" * (-len(match) % 4)
                         return base64.b64decode(match), name
 
                     return bytes.fromhex(match.replace(":", "")), name

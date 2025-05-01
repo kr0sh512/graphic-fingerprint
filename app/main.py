@@ -11,11 +11,9 @@ def test():
     import Fingerprint
 
     # fp = Fingerprint.Fingerprint("A0:1B:2C:3D:4E:5F:6A:7B:8C:9D:0E:1F:2A:3B:4C:5D")
-    fp = Fingerprint.Fingerprint("SHA256:GI2Q7YYM1gZNaJSfGS3sD3c2h86VnyzzDs/Of7vnBj8")
+    fp = Fingerprint.Fingerprint("SHA256:rFby2Z2Sl9ZRa69NLRs56zXOXE4PUkdlx+LxcbikwcY")
 
     print(fp)
-
-    exit(0)
 
     import Colorize
 
