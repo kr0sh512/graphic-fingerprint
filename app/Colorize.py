@@ -23,7 +23,7 @@ class Colorize:
 
     def __create_color_map(self):
         color_map = {}
-        for char in AUGMENTATION_STRING[1:]:
+        for char in AUGMENTATION_STRING[1:-2]:
             random.seed(ord(char) + self.fingerprint)
             color_map[char] = random.choice(list(self.colors.values()))
 
@@ -34,6 +34,9 @@ class Colorize:
             return self.colorized_map[char] + char + self.colors["reset"]
         else:
             return char
+
+    def __colorize_frame(self, text):
+        pass
 
     def colorize_fingerprint(self, text, has_frame=False):
         str_list = text.split("\n")
