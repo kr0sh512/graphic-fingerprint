@@ -1,1 +1,0 @@
-AUGMENTATION_STRING = " .o+=*BOX@%&#/^SE"
